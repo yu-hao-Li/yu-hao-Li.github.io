@@ -1,81 +1,131 @@
- h1 {
-  font-family: 'Book Antiqua';
-  font-size: 1.6rem;
-  text-align: center;
- }
+/* 全局样式 */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+}
 
- h2 {
-  font-family: 'Book Antiqua';
-  font-size: 1.2rem;
- }
+/* 导航栏样式 */
+.Header {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    z-index: 1000;
+    text-align: center;
+}
 
- blockquote {
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 2em;
-  margin-inline-start: 5px;
-  margin-inline-end: 5px;
-  unicode-bidi: isolate;
-  padding: 5px 15px 10px 15px;
-  border-radius: 20px;
-  background-color: #c8c8c833;
-  border: 3px solid #cac8c8;
- }
-
-* {
-    box-sizing: border-box;
-  }
-
-  html, body {
-    height: 100%;
-  }
-
-  body {
-    font-family: "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans SC", "Source Han Sans CN", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
-    background: linear-gradient(90deg,rgba(238,238,238,1) 10%,transparent 0), linear-gradient(rgba(238,238,238,1) 10%,transparent 0), url(/imgs/bg.png);
-    background-size: 20px 20px, 20px 20px, contain;
-    background-repeat: repeat;
-    background-attachment: fixed;
-    background-position: center;
-    margin:0;
-    padding:0;
-  }
-  .Header {
-    font-size: 25px;
-    height: 80px;
-    margin: 0px;
-    padding-left: 15%;
-    padding-right: 15%;
-    padding-top: 40px;
-    background-color: #dedede70;
-    border-bottom-width:4px;
-    border-bottom-style:solid;
-    border-bottom-color:#d0d0d0b0;
-    font-family: 'Book Antiqua', 'Palatino Linotype';
-  }
-  .Header a:link {color: #505050; text-decoration: none;}
-  .Header a:visited {color: #505050; text-decoration: none;}
-  .Header a:hover, a:active {color: #000000; text-decoration: underline;}
-
-  .MainPage {
-    width: 70%;
-    margin: auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    padding: 20px;
-    background-color: #dedede70;
-    box-shadow:0px 0px 20px #afafaf;
-  }
-  .MainPage a:link {color: #a43339; text-decoration: none;}
-  .MainPage a:visited {color: #a43339; text-decoration: none;}
-  .MainPage a:hover, a:active {color: #e80914; text-decoration: none;}
-  
-  .round_icon{
-    width: 150px;
-    height: 150px;
+.Header-content {
+    max-width: 800px;
+    margin: 0 auto;
     display: flex;
-    border-radius: 50%;
     align-items: center;
+    justify-content: flex-start;
+    padding: 0 20px;
+}
+
+.Header-avatar {
+    margin-right: 15px;
+}
+
+.Header-avatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.Header-avatar img:hover {
+    transform: scale(1.05);
+}
+
+.Header-nav {
+    display: flex;
+    flex-grow: 1;
     justify-content: center;
-    overflow: hidden;
-  }
+}
+
+.Header a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.Header a:hover {
+    color: #007AFF;
+}
+
+/* 主页内容样式 */
+.MainPage {
+    max-width: 800px;
+    margin: 80px auto 20px auto;
+    padding: 20px;
+    background-color: white;
+}
+
+/* 标题样式 */
+h2 {
+    font-size: 1.3rem;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 8px;
+    color: #222;
+}
+
+/* 链接样式 */
+a {
+    color: #007AFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* 列表样式 */
+ul {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* 段落样式 */
+p {
+    font-size: 1rem;
+    margin: 8px 0;
+}
+
+/* 强调文本 */
+strong {
+    font-weight: 600;
+}
+
+/* 适配移动设备 */
+@media (max-width: 768px) {
+    .MainPage {
+        padding: 15px;
+        margin-top: 100px;
+    }
+    
+    .Header {
+        padding: 10px 0;
+    }
+    
+    .Header a {
+        font-size: 0.9rem;
+    }
+    
+    .Header-avatar img {
+        width: 32px;
+        height: 32px;
+    }
+}

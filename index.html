@@ -1,215 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="zh">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <title>Yu-Hao&#39;s Home</title>
     <link rel="icon" href="/imgs/favicon.ico"/>
-    <link rel="stylesheet" href="/style/main.css"/>
+    <link rel="stylesheet" href="/style/welcome.css"/>
     <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+US+Modern:wght@100..400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yuhao's Home</title>
 </head>
 
 <body>
+    <div class="container">
 
-<nav class='Header'>
-    <a href='/'><i class='fa fa-home' aria-hidden='true'></i> Home </a> &emsp;
-    <a href='/research/'><i class='fa fa-graduation-cap' aria-hidden='true'></i> Research </a> &emsp;
-    <a href='/note/'><i class='fa fa-pencil-square-o' aria-hidden='true'></i> Note </a> &emsp;
-    <a href='/share/'><i class='fa fa-share-alt' aria-hidden='true'></i> Share </a>
-</nav>
-
-<div class="MainPage">
-
-    <h2 style="font-size: 1.6rem">Yu-Hao Li</h2>
-
-    <ul>
-        <li><p>
-            Undergraduate student in <a target="_blank" rel="noopener" href="https://spe.sysu.edu.cn/"><strong>School of Physics</strong></a>, <a target="_blank" rel="noopener" href="https://www.sysu.edu.cn/"><strong>Sun Yat-sen University</strong></a>
-        </p></li>
-        <li><p>
-            The member of <a target="_blank" rel="noopener" href="https://www.labxing.com/hphuang2018"><strong>PMI Lab</strong></a>, led by Prof. <a target="_blank" rel="noopener" href="https://spe.sysu.edu.cn/node/2338"><strong>Haiping Huang</strong></a>
-        </p></li>
-        <li><p>
-            The president of <strong>Society of Physics Students in Sun Yat-sen University</strong> (SPS-SYSU) in 2022-2023
-        </p></li>
-        <li><p>
-            Email: <a href="mailto:liyh536@mail2.sysu.edu.cn" target="_blank">liyh536@mail2.sysu.edu.cn</a> or <a href="mailto:Yu-Hao.Li@outlook.com" target="_blank">Yu-Hao.Li@outlook.com</a>
-        </p></li>
-        <li><p>
-            GitHub: <a href="https://github.com/lyh-space" target="_blank">https://github.com/lyh-space</a>
-        </p></li>
-    </ul>
-
-    <br>
-
-    <h2>Interest</h2>
-
-    <ul>
-    <li> <p>Statistical Physics of Disordered Systems</p>
-        <ul>
-        <li><p>Theory of Spin Glass and Its Applications</p></li>
-        <li><p>Replica Method, Cavity Method, AMP Algorithm for Equilibrium</p></li>
-        <li><p>DMFT, also called Generating Functional Method for Stochastic Dynamics</p></li>
-        </ul>
-    </li>
-    <li> <p>Machine Learning</p>
-        <ul>
-        <li><p>Theory of Neural Networks and Large Language Models</p></li>
-        <li><p>Applications of LLMs, AI Agent and Personal Assistant (try in the future)</p></li>
-        <li><p>Deployment and Training of Complex Neural Networks and LLMs (try in the future)</p></li>
-        </ul>
-    </li>
-    <li>
-        <p></p>Theoretical and Computational Neuroscience
-    </li>
-    </ul>
-
-    <br>
-
-    <h2>Publication</h2>
-    <ul>
-        <li>
-            <p>
-                <b>Yuhao Li</b>, Ruoran Bai, and Haiping Huang. "Spin glass model of in-context learning". <a href="https://arxiv.org/abs/2408.02288" target="_blank">arXiv: 2408.02288</a>, 2024.
-            </p>
-        </li>
-    </ul>
-
-    <br>
-
-    <h2>Skill</h2>
-    <ul>
-        <li>
-            <p>
-                Languages: Mandarin Chinese, English
-            </p>
-        </li>
-        <li>
-            <p>
-                Programming: Python, Mathematica, Matlab, C &amp; C++
-            </p>
-        </li>
-        <li>
-            <p>
-                Web Development: HTML, CSS, JavaScript
-            </p>
-        </li>
-        <li>
-            <p>
-            Graphic design: LaTeX, Adobe Illustrator, CAD
-            </p>
-        </li>
-    </ul>
+    <div class="top-section">
+    <div class="slogan">
+        <h1>Yuhao's Home</h1>
+        <p id="dynamic-text" class="hidden"></p>
+    </div>
+    <div class="card">
+        <div class="name">
+        <img src="imgs/avatar.jpg" alt="Avatar">
+        Yu-Hao Li
+        </div>
+        <p>text</p>
+    </div>
+    </div>
+        
+    <div class="buttons">
+        <a href="/home"><button><i class="fa fa-home"></i> Home</button></a>
+        <a href="/research"><button><i class="fa fa-graduation-cap"></i> Research</button></a>
+        <a href="/share"><button><i class="fa fa-share-alt"></i> Share</button></a>
+        <a href="/note"><button><i class="fa fa-sticky-note"></i> Note</button></a>
+        <!-- <a href="/blog"><button><i class="fa fa-pencil"></i> Blog</button></a> -->
+        <a href="/chinese"><button><i class="fa fa-language"></i> Chinese</button></a>
+    </div>
 
 </div>
 
-<div class="MainPage">
-
-    <h2>Visitor's Information</h2>
-
-    <ul>
-        <li><p>Your IP: <span id="ip">loading...</span></p></li>
-        <li><p>From: <span id="region">loading...</span></p></li>
-        <li><p>Browser: <span id="browser">loading...</span></p></li>
-        <li><p>System: <span id="os">loading...</span></p></li>
-    </ul>
-
-    <h2>Site Disclaimer</h2>
-
-    <ul>
-        <li><p>
-            This site has been running for <span id='sitetime'></span> days. <a id="last-updated">Loading...</a>
-        </p></li>
-        <li><p>
-            Copyright &copy; 2024 Li Yu-Hao. All Rights Reserved.
-        </p></li>
-    </ul>
-    
-</div>
-
-<br><br>
-
 <script>
-    function siteTime(){
-        window.setTimeout("siteTime()", 1000);
-        var days = 24 * 60 * 60 * 1000;
-        var today = new Date();
-        var todayYear = today.getFullYear();
-        var todayMonth = today.getMonth()+1;
-        var todayDate = today.getDate();
-        var todayHour = today.getHours();
-        var todayMinute = today.getMinutes();
-        var todaySecond = today.getSeconds();
-        var t1 = Date.UTC(2024, 4, 12, 14, 0, 0);
-        var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
-        var diff = t2-t1;
-        var diffDays = Math.floor((diff/days));
-        document.getElementById("sitetime").innerHTML=diffDays;
-    }
-    siteTime();
-</script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const textElement = document.getElementById("dynamic-text");
+        const text = "Nothing but enthusiasm brightens up the endless years.";
+        textElement.textContent = ""; // 清空文字
+        textElement.classList.remove("hidden");
 
-<script>
-    const repoUrl = "https://api.github.com/repos/lyh-space/lyh-space.github.io";
-    const lastUpdatedElement = document.getElementById('last-updated');
+        let index = 0;
+        const typingSpeed = 80; // 每个字母的显示速度（毫秒）
 
-    fetch(repoUrl)
-        .then(response => {
-            if (!response.ok) {
-                throw new Error("Failed to fetch GitHub API");
+        const typeWriter = () => {
+            if (index < text.length) {
+                textElement.innerHTML = text.slice(0, index + 1) + '<span class="cursor"></span>';
+                index++;
+                setTimeout(typeWriter, typingSpeed);
+            } else {
+                textElement.innerHTML = text; // 打字完成后移除光标
             }
-            return response.json();
-        })
-        .then(data => {
-            const updatedAt = new Date(data.updated_at);
-            lastUpdatedElement.textContent = `Last Updated: ${updatedAt.toLocaleString('zh-CN', { timeZone: 'Asia/Shanghai' })} (UTC+8)`;
-        })
-        .catch(error => {
-            lastUpdatedElement.textContent = "Last Updated: unknown";
-            console.error(error);
-        });
-</script>
+        };
 
-<script>
-    fetch('https://ipinfo.io/json?token=91073ae1975901')
-        .then(response => response.json())
-        .then(data => {
-        document.getElementById('ip').textContent = data.ip;
-        document.getElementById('region').textContent = `${data.city}, ${data.region}, ${data.country}`;
-    })
-        .catch(error => {
-        document.getElementById('ip').textContent = 'unknown';
-        document.getElementById('region').textContent = 'unknown';
-        console.error('Error fetching IP info:', error);
+        typeWriter();
     });
-
-    function getBrowser(userAgent) {
-        if (userAgent.indexOf('Chrome') > -1) {
-        return 'Chrome';
-        } else if (userAgent.indexOf('Firefox') > -1) {
-        return 'Firefox';
-        } else if (userAgent.indexOf('Safari') > -1) {
-        return 'Safari';
-        } else {
-        return 'unknown';
-        }
-    }
-
-    function getOS(userAgent) {
-        if (userAgent.indexOf('Windows NT') > -1) {
-        return 'Windows';
-        } else if (userAgent.indexOf('Macintosh') > -1) {
-        return 'MacOS';
-        } else if (userAgent.indexOf('Linux') > -1) {
-        return 'Linux';
-        } else {
-        return 'unknown';
-        }
-    }
-
-    const userAgent = navigator.userAgent;
-    document.getElementById('browser').textContent = getBrowser(userAgent);
-    document.getElementById('os').textContent = getOS(userAgent);
 </script>
 
 </body>

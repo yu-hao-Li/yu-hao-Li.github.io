@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    min-height: 100vh; 
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap; 
+    max-width: 1000px;
+    width: 100%;
+    gap: 40px; 
+}
+
+.top-section {
+    display: flex;
+    flex-wrap: wrap; 
+    width: 100%;
+    gap: 20px;
+}
+
+.slogan {
+    flex: 1; 
+    padding: 20px;
+}
+.slogan h1 {
+    font-family: "Varela Round", sans-serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.slogan p {
+    font-family: "Playwrite US Modern", cursive;
+    font-size: 1.5rem;
+    color: rgb(0,123,255);
+    margin-bottom: 1rem;
+}
+
+.cursor {
+    display: inline-block;
+    width: 2px;
+    height: 2rem; 
+    background-color: currentColor; 
+    margin-left: 2px;
+    vertical-align: top; 
+}
+
+.card {
+    flex: 1;
+    min-width: 250px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    gap: 10px;
+}
+.card .name {
+    font-family: "Varela Round", sans-serif;
+    font-size: 1.5rem;
+    color: black;
+    width: 100%;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+.card img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.card p {
+    font-size: 1.2rem;
+    color: gray;
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+}
+.buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    align-items: center;
+    width: 140px;
+    font-size: 1rem;
+}
+.buttons button:hover {
+    background-color: rgba(0, 123, 255, 0.1);
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.2);
+}
+
+@media (max-width: 600px) {
+    .top-section {
+        flex-direction: column;
+    }
+    .card {
+    max-width: 90%;
+    margin: auto;
+    }
+}
+
+.hidden {
+    visibility: hidden;
+}

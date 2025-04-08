@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Research - Yu-Hao&#39;s</title>
+    <title>Research - Yu-Hao</title>
     <link rel="icon" href="/imgs/favicon.ico"/>
     <link rel="stylesheet" href="/style/main.css"/>
     <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css"/>
@@ -11,88 +11,30 @@
 
 <body>
         
-<nav class='Header'>
-    <a href='/'><i class='fa fa-home' aria-hidden='true'></i> Home </a> &emsp;
-    <a href='/research/'><i class='fa fa-graduation-cap' aria-hidden='true'></i> Research </a> &emsp;
-    <a href='/note/'><i class='fa fa-pencil-square-o' aria-hidden='true'></i> Note </a> &emsp;
-    <a href='/share/'><i class='fa fa-share-alt' aria-hidden='true'></i> Share </a>
-</nav>
+<div class="Header">
+    <div class="Header-content">
+        <a href="/" class="Header-avatar">
+        <img src="../imgs/avatar.jpg" alt="avatar">
+        </a>
+        <div class="Header-nav">
+            <a href='/home'><i class='fa fa-home' aria-hidden='true'></i> Home </a> &emsp;&emsp;
+            <a href='/research/'><i class='fa fa-graduation-cap' aria-hidden='true'></i> Research </a> &emsp;&emsp;
+            <a href='/share/'><i class='fa fa-share-alt' aria-hidden='true'></i> Share </a> &emsp;&emsp;&emsp;
+        </div>
+    </div>
+    </div>
 
 <div class="MainPage">
 
-    <blockquote>
-        <img src="/imgs/SMNN-Timeline.png" alt="SMNN Timeline" style="width: 80%; margin: 0 auto; display: block;">
-    </blockquote>
+    <h2>Spin Glass Model of In-Context Learning</h2>
 
-    <blockquote>
+    <p><b>Abstract:</b>&ensp;Large language models show a surprising in-context learning ability -- being able to use a prompt to form a prediction for a query, yet without additional training, in stark contrast to old-fashioned supervised learning. Providing a mechanistic interpretation and linking the empirical phenomenon to physics are thus challenging and remain unsolved. We study a simple yet expressive transformer with linear attention and map this structure to a spin glass model with real-valued spins, where the couplings and fields explain the intrinsic disorder in data. The spin glass model explains how the weight parameters interact with each other during pre-training, and further clarifies why an unseen function can be predicted by providing only a prompt yet without further training. Our theory reveals that for single-instance learning, increasing the task diversity leads to the emergence of in-context learning, by allowing the Boltzmann distribution to converge to a unique correct solution of weight parameters. Therefore the pre-trained transformer displays a prediction power in a novel prompt setting. The proposed analytically tractable model thus offers a promising avenue for thinking about how to interpret many intriguing but puzzling properties of large language models.</p>
 
-        <h2>Spin Glass Model of In-Context Learning</h2>
+    <p><a href="https://arxiv.org/abs/2408.02288" target="_blank">arXiv:2408.02288</a></p>
 
-        <p><b>Abstract:</b>&ensp;Large language models show a surprising in-context learning ability -- being able to use a prompt to form a prediction for a query, yet without additional training, in stark contrast to old-fashioned supervised learning. Providing a mechanistic interpretation and linking the empirical phenomenon to physics are thus challenging and remain unsolved. We study a simple yet expressive transformer with linear attention and map this structure to a spin glass model with real-valued spins, where the couplings and fields explain the intrinsic disorder in data. The spin glass model explains how the weight parameters interact with each other during pre-training, and further clarifies why an unseen function can be predicted by providing only a prompt yet without further training. Our theory reveals that for single-instance learning, increasing the task diversity leads to the emergence of in-context learning, by allowing the Boltzmann distribution to converge to a unique correct solution of weight parameters. Therefore the pre-trained transformer displays a prediction power in a novel prompt setting. The proposed analytically tractable model thus offers a promising avenue for thinking about how to interpret many intriguing but puzzling properties of large language models.</p>
-
-        <p>preprint: <a href="https://arxiv.org/abs/2408.02288" target="_blank">arXiv:2408.02288</a>.</p>
-
-    </blockquote> 
+    <p>Our work is under review at <i>Physical Review E </i> and has been accepted as oral presentation at the 29th International Congress on Statistical Physics (StatPhys29) in 2025.</p>
 
 </div>
-
-<div class="MainPage">
-
-    <h2>Site Disclaimer</h2>
-
-    <ul>
-        <li><p>
-            This site has been running for <span id='sitetime'></span> days. <a id="last-updated">Loading...</a>
-        </p></li>
-        <li><p>
-            Copyright &copy; 2024 Li Yu-Hao. All Rights Reserved.
-        </p></li>
-    </ul>
-
-</div>
-
-<br><br>
-
-<script>
-    function siteTime(){
-        window.setTimeout("siteTime()", 1000);
-        var days = 24 * 60 * 60 * 1000;
-        var today = new Date();
-        var todayYear = today.getFullYear();
-        var todayMonth = today.getMonth()+1;
-        var todayDate = today.getDate();
-        var todayHour = today.getHours();
-        var todayMinute = today.getMinutes();
-        var todaySecond = today.getSeconds();
-        var t1 = Date.UTC(2024, 4, 12, 14, 0, 0);
-        var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
-        var diff = t2-t1;
-        var diffDays = Math.floor((diff/days));
-        document.getElementById("sitetime").innerHTML=diffDays;
-    }
-    siteTime();
-</script>
-
-<script>
-    const repoUrl = "https://api.github.com/repos/lyh-space/lyh-space.github.io";
-    const lastUpdatedElement = document.getElementById('last-updated');
-
-    fetch(repoUrl)
-        .then(response => {
-            if (!response.ok) {
-                throw new Error("Failed to fetch GitHub API");
-            }
-            return response.json();
-        })
-        .then(data => {
-            const updatedAt = new Date(data.updated_at);
-            lastUpdatedElement.textContent = `Last Updated: ${updatedAt.toLocaleString('zh-CN', { timeZone: 'Asia/Shanghai' })} (UTC+8)`;
-        })
-        .catch(error => {
-            lastUpdatedElement.textContent = "Last Updated: unknown";
-            console.error(error);
-        });
-</script>
 
 </body>
 
