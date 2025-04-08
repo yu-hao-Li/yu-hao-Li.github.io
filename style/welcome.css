@@ -79,8 +79,10 @@ body {
     margin-right: 10px;
 }
 .card p {
-    font-size: 1.2rem;
-    color: gray;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-top: 0.3rem;
+    color: rgb(40, 40, 40);
 }
 
 .buttons {
