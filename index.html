@@ -36,9 +36,9 @@
         <a href="/home"><button><i class="fa fa-home"></i> Home</button></a>
         <a href="/research"><button><i class="fa fa-graduation-cap"></i> Research</button></a>
         <a href="/share"><button><i class="fa fa-share-alt"></i> Share</button></a>
-        <a href="/note"><button><i class="fa fa-sticky-note"></i> Note</button></a>
+        <a href="/"><button><i class="fa fa-sticky-note"></i> Note</button></a>
         <!-- <a href="/blog"><button><i class="fa fa-pencil"></i> Blog</button></a> -->
-        <a href="/chinese"><button><i class="fa fa-language"></i> Chinese</button></a>
+        <a href="/"><button><i class="fa fa-language"></i> Chinese</button></a>
     </div>
 
 </div>
@@ -47,11 +47,11 @@
     document.addEventListener("DOMContentLoaded", () => {
         const textElement = document.getElementById("dynamic-text");
         const text = "Nothing but enthusiasm brightens up the endless years.";
-        textElement.textContent = ""; // 清空文字
+        textElement.textContent = "";
         textElement.classList.remove("hidden");
 
         let index = 0;
-        const typingSpeed = 80; // 每个字母的显示速度（毫秒）
+        const typingSpeed = 80;
 
         const typeWriter = () => {
             if (index < text.length) {
@@ -59,7 +59,7 @@
                 index++;
                 setTimeout(typeWriter, typingSpeed);
             } else {
-                textElement.innerHTML = text; // 打字完成后移除光标
+                textElement.innerHTML = text;
             }
         };
 
