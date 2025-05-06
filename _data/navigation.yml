@@ -6,7 +6,7 @@ main:
     url: /share/    
 
   - title: "Note"
-    url: /teaching/    
+    url: /note/    
     
   - title: "Blog"
     url: /blog/
