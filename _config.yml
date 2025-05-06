@@ -13,9 +13,11 @@ repository               : "yu-hao-Li/yu-hao-Li.github.io"
 author:
   avatar           : "avatar.jpg"
   name             : "Yu-Hao Li"
+  pronouns         : # example: "she/her"  
   bio              : "Nothing but enthusiasm brightens up the endless years."
   location         : "China, GuangZhou"
   employer         : "Sun Yat-sen University"
+  uri              : # URL
   email            : "Yu-Hao.Li@outlook.com" 
 
   arxiv            : # URL - Update with the correct link to your profile
