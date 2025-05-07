@@ -1,6 +1,6 @@
 ---
 title: 'Timeline for Statistical Mechanics of Neural Networks'
-date: 2025-05-07
+date: 2025-03-05
 permalink: /posts/SMNN-Timeline/
 ---
 

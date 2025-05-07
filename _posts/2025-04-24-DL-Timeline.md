@@ -1,6 +1,6 @@
 ---
 title: 'Timeline for Deep Learning'
-date: 2025-05-07
+date: 2025-04-24
 permalink: /posts/DL-Timeline/
 ---
 
