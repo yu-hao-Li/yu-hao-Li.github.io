@@ -1,8 +1,10 @@
 ---
-title: 'SMNN Timeline'
+title: 'Timeline for Statistical Mechanics of Neural Networks'
 date: 2025-05-07
 permalink: /posts/SMNN-Timeline/
 ---
 
-![](images/posts/SMNN-Timeline.png)
+![SMNN-Timeline](https://liyuhao.com.cn/images/posts/SMNN-Timeline.png)
+
+references:
 
